@@ -1,6 +1,7 @@
 import { Manrope, Sora } from 'next/font/google';
 import './globals.css';
-import Navbar from './components/Navbar';
+import Navbar from './components/layout/Navbar';
+import FooterPage from './components/layout/Footer';
 
 const soraSans = Sora({
   variable: '--font-sora-sans',
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
         <Navbar />
         {children}
+        <FooterPage />
       </body>
     </html>
   );
