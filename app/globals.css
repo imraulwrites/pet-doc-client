@@ -52,6 +52,9 @@
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
 
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
   --color-border: var(--border);
 
   --shadow-soft: 0 10px 40px -12px color-mix(in oklab, var(--moss) 25%, transparent);
