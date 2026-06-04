@@ -40,6 +40,9 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
 
@@ -94,5 +97,24 @@
   h5 {
     font-family: var(--font-display);
     letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .bg-grain {
+    background-image:
+      radial-gradient(
+        circle at 20% 10%,
+        color-mix(in oklab, var(--sage) 35%, transparent),
+        transparent 40%
+      ),
+      radial-gradient(
+        circle at 80% 90%,
+        color-mix(in oklab, var(--cream-soft) 60%, transparent),
+        transparent 45%
+      );
   }
 }
