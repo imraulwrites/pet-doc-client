@@ -32,24 +32,18 @@ export default function Navbar() {
               <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="#">Parent</Link>
-              <ul className="p-2">
-                <li>
-                  <Link href="#">Submenu 1</Link>
-                </li>
-                <li>
-                  <Link href="#">Submenu 2</Link>
-                </li>
-              </ul>
+              <Link href="/all-appointments">All Appointments</Link>
             </li>
             <li>
               <Link href="/dashboard">Dashboard</Link>
             </li>
           </ul>
         </div>
-        <Link href="#" className="btn btn-ghost text-xl">
-          daisyUI
-        </Link>
+        <div>
+          <Link href="/" className="btn btn-ghost text-xl">
+            Doc<span>Appoint</span>
+          </Link>
+        </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -57,17 +51,7 @@ export default function Navbar() {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <details>
-              <summary>Parent</summary>
-              <ul className="p-2 bg-base-100 w-40 z-1">
-                <li>
-                  <Link href="#">Submenu 1</Link>
-                </li>
-                <li>
-                  <Link href="#">Submenu 2</Link>
-                </li>
-              </ul>
-            </details>
+            <Link href="/all-appointments">All Appointments</Link>
           </li>
           <li>
             <Link href="/dashboard">Dashboard</Link>
