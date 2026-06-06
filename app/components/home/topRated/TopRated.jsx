@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
-import DoctorsCard from './DoctorsCard';
+import DoctorsCard from '../../ui/DoctorsCard';
+// import DoctorsCard from './DoctorsCard';
 
 export default function TopRated() {
   return (
