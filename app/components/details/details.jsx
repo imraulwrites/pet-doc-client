@@ -11,6 +11,7 @@ import {
   FaStar,
 } from 'react-icons/fa6';
 import Link from 'next/link';
+import BookingModal from '../ui/BookingModal';
 
 export default function Details() {
   return (
@@ -112,8 +113,8 @@ export default function Details() {
                 </div>
               </div>
             </div>
-            <div className="bg-primary hover:bg-primary/90 text-primary-foreground text-center py-3 rounded-2xl transition w-full cursor-pointer">
-              <Link href="/">Book Appointment</Link>
+            <div>
+              <BookingModal />
             </div>
           </div>
         </div>
